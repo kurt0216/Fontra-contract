@@ -1,0 +1,21 @@
+/* #SETTINGS - COMMON
+		1. Box shadow
+		2. Border radius
+		3. Transition
+*/
+
+// 1. Box shadow
+$BOX_SHADOW: 0 0 $PX_24 0 rgba(0, 0, 0, 0.1);
+$BOX_SHADOW_CARD: 0 $PX_8 $PX_32 rgba(0, 0, 0, 0.64);
+
+// 2. Border radius
+$BORDER_RADIUS_4: 0.25rem;
+$BORDER_RADIUS_8: 0.5rem;
+$BORDER_RADIUS_16: 1rem;
+$BORDER_RADIUS_20: 1.25rem;
+$BORDER_RADIUS_32: 2rem;
+$BORDER_RADIUS_42: 2.625rem;
+$BORDER_RADIUS_100: 6.25rem;
+
+// 3. Transition
+$TRANSITION_ALL: all 0.3s ease;

@@ -1,0 +1,98 @@
+/* #SETTINGS - COLOURS */
+$TRANSPARENT: transparent;
+
+$BLACK_BASE: #000000;
+$BLACK_800: #181818;
+$BLACK_700: rgba(0, 0, 0, 0.88);
+$BLACK_600: rgba(0, 0, 0, 0.64);
+$BLACK_500: rgba(0, 0, 0, 0.4);
+$BLACK_400: rgba(0, 0, 0, 0.32);
+$BLACK_300: rgba(0, 0, 0, 0.16);
+$BLACK_200: rgba(0, 0, 0, 0.08);
+$BLACK_100: rgba(0, 0, 0, 0.04);
+
+$WHITE_800: #ffffff;
+$WHITE_700: rgba(255, 255, 255, 0.88);
+$WHITE_600: rgba(255, 255, 255, 0.64);
+$WHITE_500: rgba(255, 255, 255, 0.4);
+$WHITE_400: rgba(255, 255, 255, 0.32);
+$WHITE_300: rgba(255, 255, 255, 0.16);
+$WHITE_200: rgba(255, 255, 255, 0.08);
+$WHITE_100: rgba(255, 255, 255, 0.04);
+
+$FANTRA_800: #295a01;
+$FANTRA_700: #8ac403;
+$FANTRA_600: #b9f924;
+$FANTRA_500: #dfff65;
+$FANTRA_400: #e7ff8f;
+$FANTRA_300: #edffa8;
+$FANTRA_200: #f4ffc9;
+$FANTRA_100: #f9ffe0;
+
+$NEUTRAL_800: #11171d;
+$NEUTRAL_700: #202c37;
+$NEUTRAL_600: #394960;
+$NEUTRAL_500: #62768a;
+$NEUTRAL_400: #99adbd;
+$NEUTRAL_300: #c4d0d9;
+$NEUTRAL_200: #eceff2;
+$NEUTRAL_100: #f9fafb;
+
+$YELLOW_800: #b45309;
+$YELLOW_700: rgba(180, 83, 9, 0.88);
+$YELLOW_600: rgba(180, 83, 9, 0.64);
+$YELLOW_500: rgba(180, 83, 9, 0.4);
+$YELLOW_400: rgba(180, 83, 9, 0.32);
+$YELLOW_300: rgba(180, 83, 9, 0.16);
+$YELLOW_200: rgba(180, 83, 9, 0.08);
+$YELLOW_100: rgba(180, 83, 9, 0.04);
+
+$GREEN_800: #003d2c;
+$GREEN_700: #005e46;
+$GREEN_600: #008060;
+$GREEN_500: #00a47c;
+$GREEN_400: #00d19e;
+$GREEN_300: #acecd2;
+$GREEN_200: #e6f4ee;
+$GREEN_100: #f0fdf4;
+
+$RED_800: #7f1d1d;
+$RED_700: #be1f1f;
+$RED_600: #d63434;
+$RED_500: #fb5a5a;
+$RED_400: #ff7d7d;
+$RED_300: #feaaaa;
+$RED_200: #fccfcf;
+$RED_100: #fef2f2;
+
+$INDIGO_800: #312e81;
+$INDIGO_700: #4338ca;
+$INDIGO_600: #4f46e5;
+$INDIGO_500: #6366f1;
+$INDIGO_400: #7a85ff;
+$INDIGO_300: #9ea6ff;
+$INDIGO_200: #c5c5fc;
+$INDIGO_100: #f5f3ff;
+
+$BLUE_800: #103262;
+$BLUE_700: rgba(16, 50, 98, 0.88);
+$BLUE_600: rgba(16, 50, 98, 0.64);
+$BLUE_500: rgba(16, 50, 98, 0.4);
+$BLUE_400: rgba(16, 50, 98, 0.32);
+$BLUE_300: rgba(16, 50, 98, 0.16);
+$BLUE_200: rgba(16, 50, 98, 0.08);
+$BLUE_100: rgba(16, 50, 98, 0.04);
+
+$HERO_GRADIENT: linear-gradient(
+  180deg,
+  rgba(18, 18, 18, 0) 72.86%,
+  rgba(18, 18, 18, 0.22) 78.35%,
+  #121212 100%
+);
+$BORDER_GRADIENT: linear-gradient(
+  90deg,
+  rgba(0, 0, 0, 1) 0%,
+  rgba(223, 255, 101, 1) 50%,
+  rgba(0, 0, 0, 1) 100%
+);
+$RADIAL_GRADIENT: radial-gradient(50% 50% at 50% 50%, #dfff65 0%, rgba(223, 255, 101, 0) 100%);

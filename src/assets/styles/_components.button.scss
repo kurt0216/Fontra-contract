@@ -1,0 +1,122 @@
+/* #COMPONENTS - BUTTON
+		1. Button default
+    2. Button sizes
+    3. Button colors
+    4. Button icon
+    5. Button misc
+*/
+
+// 1. Button default
+.btn {
+  font-family: $FONT_SEMIBOLD;
+  letter-spacing: $PX_0_25;
+  line-height: $PX_24;
+  appearance: none;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  transition: $TRANSITION_ALL;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  color: $WHITE_800;
+  text-decoration: none;
+  border-radius: $BORDER_RADIUS_8;
+  text-align: center;
+  background-color: $FANTRA_500;
+  color: $BLACK_800;
+}
+
+// 2. Button sizes
+.btn--md {
+  padding: $PX_12 $PX_16;
+}
+
+// 3. Button colors
+.btn--fantra {
+  background-color: $FANTRA_500;
+  color: $BLACK_800;
+}
+.btn--mint-fantra:hover,
+.btn--fantra:hover {
+  background-color: $FANTRA_300;
+}
+.btn--white {
+  background-color: $WHITE_200;
+}
+.btn--white:hover {
+  background-color: $WHITE_500;
+}
+
+// 4. Button icon
+.btn--icon {
+  position: relative;
+  padding-right: $PX_48;
+}
+.btn--icon:hover:after {
+  right: $PX_20;
+}
+.btn--mint-fantra:hover span:after,
+.btn--icon:hover span:after {
+  left: $PX_20;
+}
+.btn--icon span,
+.btn--chev-right-white:after,
+.btn--chev-right-black span:after,
+.btn--mint-fantra span:after {
+  transition: $TRANSITION_ALL;
+}
+.btn--icon:after {
+  position: absolute;
+  top: 50%;
+  right: $PX_24;
+  transform: translate(0%, -50%);
+}
+.btn--chev-right-white:after {
+  content: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.751497 11.6485C0.282868 11.1799 0.282868 10.4201 0.751497 9.95147L4.70297 6L0.751496 2.04853C0.282867 1.5799 0.282867 0.820101 0.751496 0.351472C1.22013 -0.117157 1.97992 -0.117157 2.44855 0.351472L7.24855 5.15147C7.71718 5.6201 7.71718 6.3799 7.24855 6.84853L2.44855 11.6485C1.97992 12.1172 1.22013 12.1172 0.751497 11.6485Z' fill='white'/%3E%3C/svg%3E%0A");
+  height: $PX_20;
+}
+.btn--mint-fantra span:after,
+.btn--chev-right-black span:after {
+  content: url("data:image/svg+xml,%3Csvg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.751497 12.6446C0.282868 12.176 0.282868 11.4162 0.751497 10.9476L4.70297 6.99609L0.751496 3.04462C0.282867 2.57599 0.282867 1.81619 0.751496 1.34757C1.22013 0.878936 1.97992 0.878936 2.44855 1.34757L7.24855 6.14757C7.71718 6.61619 7.71718 7.37599 7.24855 7.84462L2.44855 12.6446C1.97992 13.1133 1.22013 13.1133 0.751497 12.6446Z' fill='%23181818'/%3E%3C/svg%3E%0A");
+  height: $PX_20;
+  left: $PX_16;
+  position: relative;
+}
+.btn--mint-fantra span:before {
+  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23DFFF65'/%3E%3Cpath d='M16.3755 7.18413C15.1964 6.83752 14.1594 6.12197 13.417 5.14257C13.2405 4.91388 13.0828 4.67135 12.9453 4.41733C12.9259 4.38143 12.8971 4.35142 12.8621 4.3304C12.8271 4.30939 12.7871 4.29815 12.7462 4.29785H10.3651C10.305 4.29785 10.2475 4.3217 10.205 4.36416C10.1626 4.40661 10.1387 4.46419 10.1387 4.52423V6.81313C10.1387 6.87299 10.115 6.93041 10.0728 6.97283C10.0305 7.01526 9.97323 7.03923 9.91338 7.03951H6.2264C6.1964 7.0395 6.16671 7.04546 6.13903 7.05703C6.11136 7.06861 6.08627 7.08556 6.0652 7.10692C6.04414 7.12827 6.02753 7.1536 6.01634 7.18143C6.00515 7.20926 5.99961 7.23903 6.00002 7.26902V10.9707C6.00002 11.0307 6.02387 11.0883 6.06633 11.1307C6.10878 11.1732 6.16636 11.1971 6.2264 11.1971H9.92805C9.98809 11.1971 10.0457 11.1732 10.0881 11.1307C10.1306 11.0883 10.1544 11.0307 10.1544 10.9707V7.75636C10.1543 7.70974 10.1686 7.66423 10.1955 7.6261C10.2223 7.58797 10.2603 7.5591 10.3042 7.54347C10.3481 7.52783 10.3958 7.5262 10.4407 7.5388C10.4855 7.5514 10.5254 7.57762 10.5548 7.61383C11.3407 8.59809 12.3134 9.41729 13.417 10.0243C14.5626 10.6572 15.8276 11.0445 17.1312 11.1614C17.3408 11.1803 17.5539 11.1925 17.7705 11.1981C17.8005 11.1985 17.8302 11.193 17.8581 11.1818C17.8859 11.1706 17.9112 11.154 17.9326 11.1329C17.9539 11.1119 17.9709 11.0868 17.9825 11.0591C17.994 11.0314 18 11.0017 18 10.9717V7.64003C17.9997 7.58107 17.9765 7.52454 17.9352 7.48245C17.8939 7.44037 17.8378 7.41607 17.7789 7.4147C17.3033 7.39661 16.8319 7.31915 16.3755 7.18413Z' fill='%23181818'/%3E%3Cpath d='M13.8456 16.2454C13.8476 16.2934 13.8342 16.3407 13.8075 16.3805C13.7807 16.4203 13.7419 16.4505 13.6968 16.4668C13.6517 16.483 13.6025 16.4845 13.5565 16.4708C13.5105 16.4572 13.4701 16.4293 13.4411 16.3911C12.6549 15.4071 11.6822 14.588 10.5789 13.9806C9.43423 13.3491 8.17086 12.9622 6.86885 12.8446C6.65924 12.825 6.44614 12.8124 6.22955 12.8068C6.19947 12.8064 6.16961 12.812 6.14171 12.8233C6.11381 12.8345 6.08843 12.8512 6.06707 12.8724C6.0457 12.8936 6.02876 12.9188 6.01725 12.9466C6.00574 12.9744 5.99989 13.0042 6.00003 13.0343V16.3607C6.00029 16.4197 6.02354 16.4762 6.06483 16.5183C6.10613 16.5604 6.16222 16.5847 6.22116 16.586C6.69772 16.6044 7.17015 16.6819 7.62762 16.8166C8.80543 17.1642 9.84109 17.8796 10.5831 18.8582C10.7599 19.0866 10.9176 19.3292 11.0547 19.5834C11.074 19.6195 11.1027 19.6496 11.1378 19.6706C11.1728 19.6917 11.2129 19.7028 11.2538 19.7029H13.6349C13.6946 19.7026 13.7518 19.6788 13.794 19.6366C13.8362 19.5944 13.86 19.5372 13.8603 19.4776V17.1887C13.8603 17.1286 13.8841 17.071 13.9266 17.0286C13.969 16.9861 14.0266 16.9623 14.0867 16.9623H17.7726C17.8326 16.9623 17.8902 16.9384 17.9327 16.896C17.9751 16.8535 17.999 16.7959 17.999 16.7359V13.0301C17.9987 12.9702 17.9747 12.9129 17.9323 12.8707C17.8899 12.8284 17.8324 12.8047 17.7726 12.8047H14.0699C14.01 12.8047 13.9526 12.8284 13.9102 12.8707C13.8678 12.9129 13.8438 12.9702 13.8435 13.0301L13.8456 16.2454Z' fill='%23181818'/%3E%3C/svg%3E%0A");
+  height: $PX_24;
+  width: $PX_24;
+  top: 50%;
+  left: -25%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+// 5. Button misc
+.btn--mint-fantra {
+  background-color: $FANTRA_500;
+  color: $BLACK_800;
+}
+.btn--mint-fantra span {
+  position: relative;
+}
+.btn--max {
+  font-family: $FONT_REGULAR;
+  text-transform: uppercase;
+  color: $INDIGO_500;
+  padding: 0;
+  background: none;
+  line-height: $PX_20;
+}
+
+// 6. Flex button
+.btn--prefix-icon {
+  padding-right: 1rem;
+}
+.btn--prefix-icon > span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

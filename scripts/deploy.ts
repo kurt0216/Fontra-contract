@@ -1,6 +1,5 @@
 import * as ethers from "ethers";
 import * as dotenv from "dotenv";
-import { expandDecimals, waitForTx } from "./helper";
 
 dotenv.config();
 
